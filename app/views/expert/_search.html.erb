@@ -1,0 +1,11 @@
+<% @search_results.each do |result| %>
+  <a href=<%= "/expert/#{result.id}" %>>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"> <%= result.name %> </h5>
+        <p class="card-subtitle"> <%= result.expertise %> </p>
+        <p class="card-text"> <%= result.summary %> </p>
+      </div>
+    </div>
+  </a>
+<% end %>
