@@ -9,7 +9,7 @@ class ExpertController < ApplicationController
   end
   
   def search_expert
-    @search_results = Expert.where("expertise like ?", "%#{params[:search_text]}%")
+    @search_results = Expert.search(params[:search_text])
     render action: "index"
   end
 
