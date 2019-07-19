@@ -9,3 +9,5 @@ Rails version `Rails 5.2.3`
   expertise: string -- professional in
   summary: string -- short summary of their work
 ```
+
+Added `bootstrap` for styling
